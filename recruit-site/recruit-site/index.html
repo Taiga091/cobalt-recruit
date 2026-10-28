@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>コバルト技建 | 採用サイト</title>
+  <meta name="description" content="株式会社コバルト技建の採用サイトです。国や自治体の公共工事を技術面から支えるPSS事業部（発注者支援業務）と、調査・測量・設計を担う技術部。2つの事業部の仕事内容、働く環境、募集要項をご紹介します。">
+
+  <!-- ===== ファビコン（公式サイトの画像を参照）===== -->
+  <link rel="icon" href="https://cobalt-giken.jp/cms/wp-content/uploads/2023/02/cropped-favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="https://cobalt-giken.jp/cms/wp-content/uploads/2023/02/cropped-favicon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://cobalt-giken.jp/cms/wp-content/uploads/2023/02/cropped-favicon-180x180.png">
+  <meta name="msapplication-TileImage" content="https://cobalt-giken.jp/cms/wp-content/uploads/2023/02/cropped-favicon-270x270.png">
+
+  <!-- ===== フォント（Google Fonts）=====
+       Zen Kaku Gothic New … 和文（見出しは 700 まで。太くしすぎない）
+       Barlow Semi Condensed … 英字ラベル・数字（図面の寸法数字のような印象） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- 背景：青いグラデーション（ゆっくり動く。文字が乗る場所は白いパネルにして読みやすくしています） -->
+  <div class="bg-gradient" aria-hidden="true">
+    <span class="bg-gradient__blob bg-gradient__blob--1"></span>
+    <span class="bg-gradient__blob bg-gradient__blob--2"></span>
+    <span class="bg-gradient__blob bg-gradient__blob--3"></span>
+    <span class="bg-gradient__blob bg-gradient__blob--4"></span>
+  </div>
+
+  <!-- オープニング（約2.5秒。時間は main.js の LOADER_TIME で調整） -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img class="loader__logo" src="images/logo.jpg" alt="" width="836" height="133">
+      <span class="loader__line"></span>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- =========================================================
+       ヘッダー
+       ========================================================= -->
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="site-logo" href="#top">
+        <img class="site-logo__img" src="images/logo-header.jpg" alt="株式会社コバルト技建" width="836" height="79">
+        <span class="site-logo__sub">RECRUIT</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
+        <ul class="global-nav__list">
+          <li><a class="global-nav__link" href="#about"><span class="global-nav__en">About</span>私たちについて</a></li>
+          <li><a class="global-nav__link" href="#support"><span class="global-nav__en">PSS Dept.</span>PSS事業部</a></li>
+          <li><a class="global-nav__link" href="#engineering"><span class="global-nav__en">Engineering</span>技術部</a></li>
+          <li><a class="global-nav__link" href="#work"><span class="global-nav__en">Work</span>仕事を知る</a></li>
+          <li><a class="global-nav__link" href="#environment"><span class="global-nav__en">Environment</span>働く環境</a></li>
+          <li><a class="global-nav__link" href="#career"><span class="global-nav__en">Career</span>キャリア・資格</a></li>
+          <li><a class="global-nav__link" href="#recruit"><span class="global-nav__en">Recruit</span>募集要項</a></li>
+        </ul>
+        <a class="btn btn--primary global-nav__entry" href="#apply">エントリー<svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg></a>
+      </nav>
+    </div>
+    <!-- 読み進めた位置を示す細いバー -->
+    <span class="scroll-progress" aria-hidden="true"></span>
+  </header>
+
+  <!-- 右下の「エントリーはこちら」ボタン（スマホ・タブレット用） -->
+  <a class="float-entry" href="#apply">
+    <svg class="float-entry__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" /><path d="m4 7 8 6 8-6" /></svg>
+    <span class="float-entry__text">エントリー<br>はこちら</span>
+  </a>
+
+  <main id="main">
+    <!-- =========================================================
+         ファーストビュー：images/hero.jpg
+         ========================================================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <!-- 写真のスライドショー（全画面）。6秒ごとにゆっくり切り替わります。
+           写真の差し替え・追加は、下の hero__slide と、その下の hero__dot を同じ数だけ増減してください -->
+      <div class="hero__media" role="group" aria-roledescription="カルーセル" aria-label="会社と仕事の写真">
+        <div class="hero__slide photo is-active" role="group" aria-roledescription="スライド" aria-label="1 / 5" data-label="images/hero.jpg ／ 本社社屋">
+          <img src="images/hero.jpg" alt="青空の下に建つコバルト技建の本社社屋と社名看板" width="1150" height="647">
+        </div>
+        <div class="hero__slide photo" role="group" aria-roledescription="スライド" aria-label="2 / 5" data-label="images/photo-river.jpg ／ 河川と橋の空撮">
+          <img src="images/photo-river.jpg" alt="橋が架かる川沿いに、住宅地が広がる街の空撮写真" width="2000" height="1333">
+        </div>
+        <div class="hero__slide photo" role="group" aria-roledescription="スライド" aria-label="3 / 5" data-label="images/work-pss.jpg ／ 現場で確認する技術者">
+          <img src="images/work-pss.jpg" alt="ヘルメットを着用し、タブレットで現場の情報を確認する技術者" width="1150" height="647">
+        </div>
+        <div class="hero__slide photo" role="group" aria-roledescription="スライド" aria-label="4 / 5" data-label="images/about.jpg ／ 工事現場">
+          <img src="images/about.jpg" alt="桜島を望む海沿いの工事現場。鉄筋が組まれた構造物の基礎工事が進んでいる" width="1150" height="647">
+        </div>
+        <div class="hero__slide photo" role="group" aria-roledescription="スライド" aria-label="5 / 5" data-label="images/cta.jpg ／ 現地で図面を確認">
+          <img src="images/cta.jpg" alt="現地で図面を広げ、確認しながら打ち合わせをする技術者" width="1150" height="647">
+        </div>
+      </div>
+
+      <div class="hero__inner">
+        <p class="hero__badge"><span class="hero__badge-dot" aria-hidden="true"></span>土木技術者を募集しています（新卒・中途）</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__title-line">社会インフラを支え、</span>
+          <span class="hero__title-line">この国の安全な</span>
+          <span class="hero__title-line">暮らしを築く。</span>
+        </h1>
+        <p class="hero__sub">磨き上げた技術と経験を、地域の確かな未来へ繋ぐ仕事。</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--large" href="#work">仕事内容を見る<svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg></a>
+          <a class="btn btn--ghost-light btn--large" href="#recruit">募集要項を見る<svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg></a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="下へスクロール"><span>Scroll</span></a>
+
+      <!-- スライドショーの操作（ドット・一時停止） -->
+      <div class="hero__controls">
+        <div class="hero__dots">
+          <button class="hero__dot" type="button" aria-label="1枚目の写真を表示"></button>
+          <button class="hero__dot" type="button" aria-label="2枚目の写真を表示"></button>
+          <button class="hero__dot" type="button" aria-label="3枚目の写真を表示"></button>
+          <button class="hero__dot" type="button" aria-label="4枚目の写真を表示"></button>
+          <button class="hero__dot" type="button" aria-label="5枚目の写真を表示"></button>
+        </div>
+        <button class="hero__pause" type="button" aria-label="自動再生を停止" aria-pressed="false">
+          <svg class="hero__icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 3.5v9M10.5 3.5v9" /></svg>
+          <svg class="hero__icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3.5v9l7-4.5z" /></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         01 私たちについて
+         ========================================================= -->
+    <section class="section section--paper about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text">
+            <div class="head">
+              <p class="head__en"><span class="head__no">01</span>About us</p>
+              <h2 class="head__title" id="about-title">私たちについて</h2>
+            </div>
+            <p class="about__statement">
+              道路・河川・橋梁などの社会インフラ整備を、<em>PSS事業部と技術部</em>の2つの立場から支えています。
+            </p>
+            <p class="about__body">
+              PSS事業部は、国や自治体など発注者の立場で公共工事を技術的に支援する「発注者支援業務」を担当しています。技術部は、鹿児島県内を中心に調査・測量・土木設計を行い、事業の土台をつくります。それぞれの専門性を活かして、地域の社会基盤づくりに取り組んでいます。
+            </p>
+
+            <ul class="about__depts">
+              <li class="about__dept">
+                <p class="about__dept-tag">PSS事業部</p>
+                <p class="about__dept-title">発注者の立場で支える</p>
+                <p class="about__dept-text">工事監督支援・積算技術・資料作成など、公共工事を技術面から支援します。</p>
+              </li>
+              <li class="about__dept">
+                <p class="about__dept-tag about__dept-tag--eng">技術部</p>
+                <p class="about__dept-title">調査・測量・設計で支える</p>
+                <p class="about__dept-text">鹿児島県を中心に、道路や河川などの社会基盤づくりの土台を担います。</p>
+              </li>
+            </ul>
+
+            <dl class="company-data">
+              <div class="company-data__row">
+                <dt>会社名</dt>
+                <dd>株式会社コバルト技建</dd>
+              </div>
+              <div class="company-data__row">
+                <dt>事業内容</dt>
+                <dd>PSS事業部：国や地方自治体が行う公共工事における発注者支援業務（工事監督支援、積算技術、資料作成業務など）<br>技術部：鹿児島県を中心とした調査・測量・土木設計業務</dd>
+              </div>
+            </dl>
+
+            <a class="text-link" href="https://cobalt-giken.jp/about/" target="_blank" rel="noopener">会社詳細を見る<svg class="text-link__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 3h4v4M13 3 7 9M11 9v4H3V5h4" /></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
+          </div>
+
+          <figure class="about__photo">
+            <div class="photo" data-label="images/about.jpg ／ 工事現場の写真">
+              <img src="images/about.jpg" alt="桜島を望む海沿いの工事現場。鉄筋が組まれた構造物の基礎工事が進んでいる" width="1150" height="647" loading="lazy">
+            </div>
+            <figcaption class="about__photo-cap"><span>Site</span>桜島を望む工事現場</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         02 PSS事業部 ― 発注者支援業務とは（方眼の背景＝図面のイメージ）
+         ========================================================= -->
+    <section class="section section--grid support" id="support" aria-labelledby="support-title">
+      <div class="container">
+        <div class="head head--split">
+          <div>
+            <p class="head__en"><span class="head__no">02</span>What we do</p>
+            <h2 class="head__title" id="support-title"><span class="head__dept">PSS事業部</span>発注者支援業務とは</h2>
+          </div>
+          <p class="head__lead">
+            発注者支援業務とは、国や地方自治体などの発注者に代わり、公共工事の監督や資料作成、積算などを技術的に支援する仕事です。
+          </p>
+        </div>
+
+        <!-- 立場の図解 -->
+        <figure class="position-map" aria-labelledby="position-map-caption">
+          <figcaption class="position-map__caption" id="position-map-caption">
+            <span class="position-map__fig">Fig.</span>公共工事に関わる3つの立場
+          </figcaption>
+
+          <div class="position-map__grid">
+            <div class="position-node position-node--owner">
+              <p class="position-node__side">発注者側</p>
+              <p class="position-node__role">発注者</p>
+              <p class="position-node__who">国土交通省・県・市町村</p>
+              <p class="position-node__desc">工事を発注し、完成まで責任を持つ</p>
+            </div>
+
+            <div class="position-link">
+              <span class="position-link__label">報告・資料提出 →</span>
+              <span class="position-link__line" aria-hidden="true"></span>
+              <span class="position-link__label">← 指示・相談</span>
+            </div>
+
+            <div class="position-node position-node--us">
+              <p class="position-node__side">発注者側</p>
+              <p class="position-node__role">発注者支援</p>
+              <p class="position-node__who">コバルト技建の技術者<span class="nowrap">（PSS事業部）</span></p>
+              <p class="position-node__desc">発注者のチームの一員として、技術面を支える</p>
+              <span class="position-node__mark" aria-hidden="true">WE ARE HERE</span>
+            </div>
+
+            <div class="position-link">
+              <span class="position-link__label">確認・立会い →</span>
+              <span class="position-link__line" aria-hidden="true"></span>
+              <span class="position-link__label">← 協議</span>
+            </div>
+
+            <div class="position-node">
+              <p class="position-node__side">受注者側</p>
+              <p class="position-node__role">施工会社</p>
+              <p class="position-node__who">施工管理技術者</p>
+              <p class="position-node__desc">工事を計画し、現場で形にする</p>
+            </div>
+          </div>
+        </figure>
+
+        <!-- 業務内容（3種類） -->
+        <div class="duties">
+          <h3 class="duties__title">業務内容</h3>
+          <div class="duties__list">
+            <article class="duty">
+              <p class="duty__no">01</p>
+              <h4 class="duty__name">工事監督支援</h4>
+              <p class="duty__text">発注者の監督職員を補助し、工事が計画どおり安全に進んでいるかを確認します。</p>
+              <ul class="check-list">
+                <li>工事状況の確認</li>
+                <li>施工計画書の確認</li>
+                <li>工程・品質・安全管理の確認</li>
+                <li>工事資料の確認</li>
+                <li>発注者への報告</li>
+              </ul>
+            </article>
+            <article class="duty">
+              <p class="duty__no">02</p>
+              <h4 class="duty__name">積算技術</h4>
+              <p class="duty__text">設計図書をもとに数量を拾い、工事費の算出や積算資料づくりを支援します。</p>
+              <ul class="check-list">
+                <li>工事数量の算出</li>
+                <li>工事費の積算</li>
+                <li>設計図書の確認</li>
+                <li>積算資料の作成</li>
+              </ul>
+            </article>
+            <article class="duty">
+              <p class="duty__no">03</p>
+              <h4 class="duty__name">資料作成業務</h4>
+              <p class="duty__text">事業を進めるうえで必要な行政資料や、設計変更・協議のための資料をまとめます。</p>
+              <ul class="check-list">
+                <li>行政資料の作成</li>
+                <li>工事計画資料</li>
+                <li>設計変更資料</li>
+                <li>関係機関との協議資料</li>
+              </ul>
+            </article>
+          </div>
+          <a class="text-link" href="https://cobalt-giken.jp/business/pss-dept/" target="_blank" rel="noopener">業務内容を詳しく見る<svg class="text-link__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 3h4v4M13 3 7 9M11 9v4H3V5h4" /></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         03 PSS事業部 ― 施工管理との違い
+         ========================================================= -->
+    <section class="section difference" id="difference" aria-labelledby="difference-title">
+      <div class="container">
+          <div class="head head--split">
+            <div>
+              <p class="head__en"><span class="head__no">03</span>Difference</p>
+              <h2 class="head__title" id="difference-title"><span class="head__dept">PSS事業部</span>施工管理との違い</h2>
+            </div>
+            <p class="head__lead">
+              同じ工事に関わりながら、立っている場所が違います。施工管理が「つくる側」なら、発注者支援は「確かめる側」です。
+            </p>
+          </div>
+
+        <div class="contrast">
+          <div class="contrast__side contrast__side--them">
+            <p class="contrast__label">施工管理</p>
+            <p class="contrast__word">つくる<span>側</span></p>
+            <p class="contrast__note">施工会社の立場で、工事を実行し現場を管理する</p>
+          </div>
+          <div class="contrast__side contrast__side--us">
+            <p class="contrast__label">発注者支援</p>
+            <p class="contrast__word">確かめる<span>側</span></p>
+            <p class="contrast__note">発注者の立場で、工事を監督・確認し資料にまとめる</p>
+          </div>
+        </div>
+
+          <div class="table-scroll">
+            <table class="compare-table">
+              <caption class="visually-hidden">発注者支援業務と施工管理の比較</caption>
+              <thead>
+                <tr>
+                  <th scope="col"><span class="visually-hidden">項目</span></th>
+                  <th scope="col" class="compare-table__us">発注者支援</th>
+                  <th scope="col">施工管理</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">立場</th><td class="compare-table__us">発注者側</td><td>施工会社側</td></tr>
+                <tr><th scope="row">主な役割</th><td class="compare-table__us">工事の監督・確認・資料作成</td><td>工事の実行・現場管理</td></tr>
+                <tr><th scope="row">工程</th><td class="compare-table__us">工程を確認する</td><td>工程を計画・管理する</td></tr>
+                <tr><th scope="row">品質</th><td class="compare-table__us">品質基準を満たしているか確認</td><td>品質を確保する</td></tr>
+                <tr><th scope="row">勤務環境</th><td class="compare-table__us">官公庁・事務所・現場</td><td>工事現場中心</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 施工管理経験が活きるポイント -->
+          <div class="experience">
+            <div class="experience__head">
+              <h3 class="experience__title">施工管理の経験は、<br>そのまま「確認する力」になります</h3>
+              <p class="experience__text">
+                施工計画書を書いたことがある人は、読むべきポイントが分かります。現場の段取りを知っている人は、無理のない工程かどうかを判断できます。発注者支援業務は、施工管理で培った知識と感覚を、立場を変えて活かせる仕事です。
+              </p>
+            </div>
+            <ul class="experience__list">
+              <li class="experience__item">
+                <span class="experience__from">施工計画書・施工図を作ってきた</span>
+                <svg class="experience__arrow" viewBox="0 0 48 16" aria-hidden="true"><path d="M0 8h44M37 2l7 6-7 6" /></svg>
+                <span class="experience__to">計画書や図面の確認で活きる</span>
+              </li>
+              <li class="experience__item">
+                <span class="experience__from">工程・品質・安全を管理してきた</span>
+                <svg class="experience__arrow" viewBox="0 0 48 16" aria-hidden="true"><path d="M0 8h44M37 2l7 6-7 6" /></svg>
+                <span class="experience__to">確認の目線と基準になる</span>
+              </li>
+              <li class="experience__item">
+                <span class="experience__from">現場で業者や地元と調整してきた</span>
+                <svg class="experience__arrow" viewBox="0 0 48 16" aria-hidden="true"><path d="M0 8h44M37 2l7 6-7 6" /></svg>
+                <span class="experience__to">施工業者との協議で活きる</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         04 技術部 ― 技術部について
+         ========================================================= -->
+    <section class="section section--paper engineering" id="engineering" aria-labelledby="engineering-title">
+      <div class="container">
+        <div class="engineering__intro">
+          <div class="head">
+            <p class="head__en"><span class="head__no">04</span>Engineering</p>
+            <h2 class="head__title" id="engineering-title"><span class="head__dept head__dept--eng">技術部</span>技術部について</h2>
+          </div>
+          <figure class="engineering__photo photo">
+            <img src="images/engineering-dept-04.jpg" alt="樹林に囲まれた沢で、測量用の標尺を構えて計測する技術者" width="1150" height="647" loading="lazy">
+          </figure>
+          <div class="engineering__copy">
+            <p class="engineering__catch">鹿児島の未来を、<br>技術で支える</p>
+            <p>
+              私たちの技術部は、鹿児島県を中心に、地域の社会インフラ整備を支える測量・設計業務に取り組む建設コンサルタントです。道路や河川など、地域の暮らしに欠かせない社会基盤の整備に、地域に根ざした技術者集団として携わり、安全で安心して暮らせる地域づくりに貢献しています。
+            </p>
+            <ul class="tag-list">
+              <li>鹿児島県中心</li><li>建設コンサルタント</li><li>地域に根ざした技術者集団</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 業務の流れ（道路測量・設計の場合） -->
+        <div class="process">
+          <h3 class="process__title">業務の流れ<span>道路測量・設計の場合</span></h3>
+          <ol class="process-flow">
+            <li class="process-step">
+              <span class="process-step__no" aria-hidden="true">01</span>
+              <p class="process-step__title">調査・計画<small>ルート選定</small></p>
+              <ul class="process-step__list">
+                <li><strong>資料収集と現地踏査</strong>過去のデータや法務局の資料を集め、実際に現地を歩いて地形や周囲の環境を確認します。</li>
+                <li><strong>最適なルートの選定</strong>技術的・経済的な視点から、安全で地域に最適な道路のルート（概略）を比較検討します。</li>
+              </ul>
+            </li>
+            <li class="process-step">
+              <span class="process-step__no" aria-hidden="true">02</span>
+              <p class="process-step__title">路線測量<small>現地計測</small></p>
+              <ul class="process-step__list">
+                <li><strong>基準点・中心線の設置</strong>最新の測量機器を用いて、基準となる点や道路の中心線を正確に配置します。</li>
+                <li><strong>縦横断の立体測量</strong>道路が通る場所の高さ（縦断）や左右の傾斜・幅（横断）を測り、現地の三次元データを取得します。</li>
+              </ul>
+            </li>
+            <li class="process-step">
+              <span class="process-step__no" aria-hidden="true">03</span>
+              <p class="process-step__title">詳細設計<small>図面・数量作成</small></p>
+              <ul class="process-step__list">
+                <li><strong>施工図面の作成</strong>測量データを基に、道路のカーブ、坂道の度合い、アスファルトの厚みなどを緻密に計算して図面化します。</li>
+                <li><strong>排水・構造物の設計</strong>側溝や擁壁、交差点などの詳細な構造を設計し、工事に必要な工事費の積算資料を作ります。</li>
+              </ul>
+            </li>
+            <li class="process-step">
+              <span class="process-step__no" aria-hidden="true">04</span>
+              <p class="process-step__title">用地測量<small>境界確定</small></p>
+              <ul class="process-step__list">
+                <li><strong>境界の確認と立会</strong>道路の建設に必要な土地の範囲を決めるため、土地の所有者や関係機関と現地で境界を確認します。</li>
+                <li><strong>用地幅杭の設置</strong>買収や使用が必要となる正確な境界線に杭（用地幅杭）を打ち込み、取得すべき面積を算出します。</li>
+              </ul>
+            </li>
+          </ol>
+          <a class="text-link" href="https://cobalt-giken.jp/business/engineering-dept/" target="_blank" rel="noopener">技術部の業務内容を見る<svg class="text-link__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 3h4v4M13 3 7 9M11 9v4H3V5h4" /></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         05 仕事を知る（写真を大きく見せる2枚のパネル）
+         ========================================================= -->
+    <section class="section section--white work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="head head--split">
+          <div>
+            <p class="head__en"><span class="head__no">05</span>Our work</p>
+            <h2 class="head__title" id="work-title">仕事を知る</h2>
+          </div>
+          <p class="head__lead">
+            当社には、発注者支援を担う「PSS事業部」と、調査・測量・設計を担う「技術部」があります。それぞれの仕事と1日の流れをご紹介します。
+          </p>
+        </div>
+
+        <div class="depts">
+          <!-- ▼ PSS事業部 -->
+          <article class="dept" aria-labelledby="dept-pss-title">
+            <div class="dept__visual">
+              <div class="photo" data-label="images/work-pss.jpg ／ 現場で確認する技術者">
+                <img src="images/work-pss.jpg" alt="ヘルメットを着用し、タブレットで現場の情報を確認する技術者" width="1150" height="647" loading="lazy">
+              </div>
+              <p class="dept__en" aria-hidden="true">Public Service Support</p>
+            </div>
+            <div class="dept__body">
+              <p class="dept__tag">発注者支援</p>
+              <h3 class="dept__title" id="dept-pss-title">PSS事業部</h3>
+              <p class="dept__text">国土交通省の事務所や県の出先機関などに勤務し、発注者の一員として工事の円滑な実施と品質確保を支えます。</p>
+              <dl class="dept__facts">
+                <div><dt>主な業務</dt><dd>工事監督支援、事業調査、積算技術、資料作成</dd></div>
+                <div><dt>主な勤務先</dt><dd>国道事務所・河川事務所、出張所など</dd></div>
+              </dl>
+
+              <button class="more__toggle" type="button" aria-expanded="false" aria-controls="dept-pss-details" data-open-text="1日の流れを見る" data-close-text="閉じる">
+                <span class="more__text">1日の流れを見る</span><span class="more__icon" aria-hidden="true"></span>
+              </button>
+              <div class="more__panel" id="dept-pss-details" hidden>
+                <h4 class="visually-hidden">PSS事業部 1日の流れ（例）</h4>
+                <ol class="timeline">
+                  <li class="timeline__item"><time class="timeline__time" datetime="08:30">8:30</time><div class="timeline__body"><p class="timeline__head">出勤・メール確認</p><p class="timeline__text">事務所に出勤。施工業者からの提出書類や連絡事項を確認します。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="09:00">9:00</time><div class="timeline__body"><p class="timeline__head">発注者との打ち合わせ</p><p class="timeline__text">監督職員と、今日確認する工事や段階確認の予定をすり合わせます。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="10:00">10:00</time><div class="timeline__body"><p class="timeline__head">現場確認</p><p class="timeline__text">工事現場へ。出来形や安全対策が計画どおりかを確認し、写真に残します。</p></div></li>
+                  <li class="timeline__item timeline__item--break"><time class="timeline__time" datetime="12:00">12:00</time><div class="timeline__body"><p class="timeline__head">昼休憩</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="13:00">13:00</time><div class="timeline__body"><p class="timeline__head">工事資料・施工状況確認</p><p class="timeline__text">施工計画書や品質管理資料を、設計図書と照らし合わせて確認します。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="15:00">15:00</time><div class="timeline__body"><p class="timeline__head">施工業者との協議</p><p class="timeline__text">現場条件の変化や設計変更について、施工業者と内容を整理します。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="16:00">16:00</time><div class="timeline__body"><p class="timeline__head">報告書・資料作成</p><p class="timeline__text">確認結果を報告書にまとめ、発注者へ提出します。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="17:30">17:30</time><div class="timeline__body"><p class="timeline__head">退勤</p></div></li>
+                </ol>
+              </div>
+            </div>
+          </article>
+
+          <!-- ▼ 技術部 -->
+          <article class="dept" aria-labelledby="dept-eng-title">
+            <div class="dept__visual">
+              <div class="photo" data-label="images/work-engineering.jpg ／ 図面作業の様子">
+                <img src="images/work-engineering.jpg" alt="パソコンの画面で道路の横断図を確認する技術者" width="1150" height="647" loading="lazy">
+              </div>
+              <p class="dept__en" aria-hidden="true">Engineering</p>
+            </div>
+            <div class="dept__body">
+              <p class="dept__tag">調査・測量・設計</p>
+              <h3 class="dept__title" id="dept-eng-title">技術部</h3>
+              <p class="dept__text">鹿児島県の業務を中心に、道路や河川などの調査・測量・設計を行います。現地で調べたデータを、図面と数量で形にする仕事です。</p>
+              <dl class="dept__facts">
+                <div><dt>主な業務</dt><dd>現地調査、現地測量・用地測量、道路・河川構造物の設計、CAD図面作成、数量計算</dd></div>
+                <div><dt>主な勤務先</dt><dd>本社・事業所、測量・調査の現地</dd></div>
+              </dl>
+
+              <button class="more__toggle" type="button" aria-expanded="false" aria-controls="dept-eng-details" data-open-text="1日の流れを見る" data-close-text="閉じる">
+                <span class="more__text">1日の流れを見る</span><span class="more__icon" aria-hidden="true"></span>
+              </button>
+              <div class="more__panel" id="dept-eng-details" hidden>
+                <h4 class="visually-hidden">技術部 1日の流れ（例）</h4>
+                <ol class="timeline">
+                  <li class="timeline__item"><time class="timeline__time" datetime="08:30">8:30</time><div class="timeline__body"><p class="timeline__head">出勤・朝礼</p><p class="timeline__text">チームで今日の作業内容と担当を確認します。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="09:00">9:00</time><div class="timeline__body"><p class="timeline__head">測量準備・機器点検</p><p class="timeline__text">測量機器や基準点の資料をそろえ、現地へ向かいます。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="09:30">9:30</time><div class="timeline__body"><p class="timeline__head">現地測量</p><p class="timeline__text">道路や河川の現況を測り、設計の基礎になるデータを取得します。</p></div></li>
+                  <li class="timeline__item timeline__item--break"><time class="timeline__time" datetime="12:00">12:00</time><div class="timeline__body"><p class="timeline__head">昼休憩</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="13:00">13:00</time><div class="timeline__body"><p class="timeline__head">測量データの整理</p><p class="timeline__text">事務所に戻り、取得したデータをCADで図面化します。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="15:00">15:00</time><div class="timeline__body"><p class="timeline__head">設計計算・図面作成</p><p class="timeline__text">構造計算や数量計算を行い、設計図面を仕上げていきます。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="16:30">16:30</time><div class="timeline__body"><p class="timeline__head">照査・打ち合わせ準備</p><p class="timeline__text">先輩と成果品をチェックし、県の担当者との打ち合わせ資料を準備します。</p></div></li>
+                  <li class="timeline__item"><time class="timeline__time" datetime="17:30">17:30</time><div class="timeline__body"><p class="timeline__head">退勤</p></div></li>
+                </ol>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 社員インタビュー（公式サイト） -->
+        <a class="banner-link" href="https://cobalt-giken.jp/recruit/interview/" target="_blank" rel="noopener">
+          <span class="banner-link__en">Interview</span>
+          <span class="banner-link__text">先輩社員のインタビューを読む</span>
+          <span class="banner-link__circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" /></svg></span>
+          <span class="visually-hidden">（新しいタブで開きます）</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         06 プロジェクト紹介（目次のような横長リスト）
+         ========================================================= -->
+    <section class="section section--paper projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="head head--split">
+          <div>
+            <p class="head__en"><span class="head__no">06</span>Projects</p>
+            <h2 class="head__title" id="projects-title">プロジェクト紹介</h2>
+          </div>
+          <p class="head__lead">
+            暮らしに欠かせない道路や川、構造物。PSS事業部は発注者の立場から工事を支え、技術部は調査・測量・設計で事業の土台をつくります。
+          </p>
+        </div>
+
+        <!-- ▼ PSS事業部 -->
+        <div class="project-group">
+          <h3 class="project-group__title">PSS事業部<span>発注者支援</span></h3>
+          <ul class="project-list">
+            <li class="project">
+              <div class="project__name"><span class="project__en">Road</span><h4 class="project__title">道路</h4></div>
+              <div class="project__desc">
+                <p>地域をつなぐ道路の整備に関わります。拡幅や線形の改良、舗装の更新、トンネルや橋梁の新設など、工事の規模もさまざまです。</p>
+                <ul class="tag-list"><li>道路改良</li><li>舗装</li><li>トンネル</li><li>橋梁</li></ul>
+              </div>
+              <div class="project__role">
+                <p class="project__label">発注者支援としての関わり</p>
+                <ul class="check-list">
+                  <li>施工計画書や出来形の確認</li>
+                  <li>設計変更に伴う数量の算出</li>
+                  <li>交通規制や地元との協議資料の作成</li>
+                </ul>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__name"><span class="project__en">River</span><h4 class="project__title">河川</h4></div>
+              <div class="project__desc">
+                <p>大雨や土砂災害から暮らしを守る工事です。川幅を広げる改修や砂防えん堤の整備、被災した箇所を早く元に戻す災害復旧にも携わります。</p>
+                <ul class="tag-list"><li>河川改修</li><li>砂防</li><li>災害復旧</li></ul>
+              </div>
+              <div class="project__role">
+                <p class="project__label">発注者支援としての関わり</p>
+                <ul class="check-list">
+                  <li>護岸や構造物の施工状況の確認</li>
+                  <li>災害復旧に向けた現地調査と資料作成</li>
+                  <li>関係機関との協議資料の作成</li>
+                </ul>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__name"><span class="project__en">Structure</span><h4 class="project__title">構造物</h4></div>
+              <div class="project__desc">
+                <p>老朽化が進むインフラを、長く安全に使い続けるための仕事です。橋梁などの点検結果をもとに、補修や維持管理の計画を支えます。</p>
+                <ul class="tag-list"><li>橋梁点検</li><li>補修</li><li>維持管理</li></ul>
+              </div>
+              <div class="project__role">
+                <p class="project__label">発注者支援としての関わり</p>
+                <ul class="check-list">
+                  <li>点検結果の整理と補修計画資料の作成</li>
+                  <li>補修工事の施工状況の確認</li>
+                  <li>維持管理に必要な資料の整理</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ▼ 技術部 -->
+        <div class="project-group">
+          <h3 class="project-group__title">技術部<span>調査・測量・設計</span></h3>
+          <ul class="project-list">
+            <li class="project">
+              <div class="project__name"><span class="project__en">Research</span><h4 class="project__title">調査</h4></div>
+              <div class="project__desc">
+                <p>鹿児島県の業務を中心に、交通量や地形など現地の状況を調べます。計画・設計の前提となる、正確な現況把握が仕事の基礎になります。</p>
+                <ul class="tag-list"><li>交通調査</li><li>環境調査</li><li>地形調査</li></ul>
+              </div>
+              <div class="project__role">
+                <p class="project__label">主な業務</p>
+                <ul class="check-list">
+                  <li>交通調査・環境調査</li>
+                  <li>急傾斜地などの地形調査</li>
+                  <li>用地取得に関する調査</li>
+                </ul>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__name"><span class="project__en">Survey</span><h4 class="project__title">測量</h4></div>
+              <div class="project__desc">
+                <p>鹿児島県の業務を中心に、道路や河川などの計画・設計に必要な現地の状況を測ります。正確なデータが、その後の設計と工事のすべての基準になります。</p>
+                <ul class="tag-list"><li>現地測量</li><li>基準点測量</li><li>用地測量</li></ul>
+              </div>
+              <div class="project__role">
+                <p class="project__label">主な業務</p>
+                <ul class="check-list">
+                  <li>現地測量・基準点測量</li>
+                  <li>用地測量・境界の確認</li>
+                  <li>測量データの整理と図面化</li>
+                </ul>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__name"><span class="project__en">Design</span><h4 class="project__title">設計</h4></div>
+              <div class="project__desc">
+                <p>測量データをもとに、道路や河川構造物などを設計します。経済性や安全性、周辺環境への配慮を考えながら、図面と数量にまとめます。</p>
+                <ul class="tag-list"><li>道路設計</li><li>河川構造物</li><li>CAD</li></ul>
+              </div>
+              <div class="project__role">
+                <p class="project__label">主な業務</p>
+                <ul class="check-list">
+                  <li>道路・河川構造物の設計</li>
+                  <li>設計計算・数量計算</li>
+                  <li>CAD図面・報告書の作成</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <a class="text-link" href="https://cobalt-giken.jp/works/" target="_blank" rel="noopener">業務実績を見る<svg class="text-link__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 3h4v4M13 3 7 9M11 9v4H3V5h4" /></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         06 プロジェクト紹介（続き）地域とともに ― 社会貢献活動
+         ========================================================= -->
+    <section class="section volunteer" id="volunteer" aria-labelledby="volunteer-title">
+      <div class="container volunteer__grid">
+        <div class="volunteer__text">
+          <p class="head__en">With the community</p>
+          <h2 class="volunteer__title" id="volunteer-title">地域とともに<br>― 社会貢献活動</h2>
+          <p>私たちの仕事は、皆さまからお預かりした税金で成り立つ公共事業です。だからこそ、仕事以外でも地域に貢献することを大切にしています。鹿児島や熊本では、道路の清掃などを行う「道守（みちもり）活動」に社員が参加しています。</p>
+
+          <p class="volunteer__label">参加している団体</p>
+          <ul class="volunteer__groups">
+            <li>道守九州会議</li>
+            <li>NPO法人 志布志市ふるさと協議会</li>
+            <li>NPO法人 水土里ボランティア</li>
+            <li>大隅地区測量設計業協議会</li>
+            <li>公益社団法人 鹿児島県測量設計業協会</li>
+          </ul>
+          <a class="text-link" href="https://cobalt-giken.jp/category/news/volunteer/" target="_blank" rel="noopener">社会貢献活動の報告を見る<svg class="text-link__icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 3h4v4M13 3 7 9M11 9v4H3V5h4" /></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
+        </div>
+
+        <!-- 写真のスライドショー（5秒ごとに自動切り替え・停止ボタンあり） -->
+        <div class="slider" aria-roledescription="カルーセル" aria-label="社会貢献活動の写真">
+          <div class="slider__viewport">
+            <ul class="slider__track">
+              <li class="slider__slide" role="group" aria-roledescription="スライド" aria-label="1 / 4">
+                <figure class="slider__figure">
+                  <img src="images/slide-michimori.jpg" alt="道守のぼり旗の前で、集めたごみ袋を囲んで並ぶ社員たち" width="1200" height="900" loading="lazy">
+                  <figcaption class="slider__caption">道守活動：道路の清掃に社員が参加しています</figcaption>
+                </figure>
+              </li>
+              <li class="slider__slide" role="group" aria-roledescription="スライド" aria-label="2 / 4">
+                <figure class="slider__figure">
+                  <img src="images/slide-tomoshibi.jpg" alt="電柱に取り付けられた「かごしま道のともしびパートナー」の看板と、路面電車が走る鹿児島市の交差点" width="1200" height="900" loading="lazy">
+                  <figcaption class="slider__caption">「かごしま道のともしびパートナー」として道路の維持管理に協力</figcaption>
+                </figure>
+              </li>
+              <li class="slider__slide" role="group" aria-roledescription="スライド" aria-label="3 / 4">
+                <figure class="slider__figure">
+                  <img src="images/slide-ambulance.jpg" alt="車体に志布志市とコバルト技建の名前が入った救急車" width="800" height="629" loading="lazy">
+                  <figcaption class="slider__caption">志布志市への救急車の寄贈</figcaption>
+                </figure>
+              </li>
+              <li class="slider__slide" role="group" aria-roledescription="スライド" aria-label="4 / 4">
+                <figure class="slider__figure">
+                  <img src="images/slide-ekiden.jpg" alt="コバルト技建の名前が入ったユニフォームでたすきを渡すランナー" width="1200" height="800" loading="lazy">
+                  <figcaption class="slider__caption">地域の駅伝大会でたすきをつなぐ</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="slider__controls">
+            <div class="slider__dots">
+              <button class="slider__dot" type="button" aria-label="1枚目の写真を表示"></button>
+              <button class="slider__dot" type="button" aria-label="2枚目の写真を表示"></button>
+              <button class="slider__dot" type="button" aria-label="3枚目の写真を表示"></button>
+              <button class="slider__dot" type="button" aria-label="4枚目の写真を表示"></button>
+            </div>
+            <div class="slider__btns">
+              <button class="slider__btn slider__prev" type="button" aria-label="前の写真">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" /></svg>
+              </button>
+              <button class="slider__btn slider__next" type="button" aria-label="次の写真">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" /></svg>
+              </button>
+              <button class="slider__btn slider__pause" type="button" aria-label="自動再生を停止" aria-pressed="false">
+                <svg class="slider__icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 3.5v9M10.5 3.5v9" /></svg>
+                <svg class="slider__icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3.5v9l7-4.5z" /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         07 数字で見る働く環境（コバルトブルー・特大の数字）
+         数字は .stat__num の中身を書き換えてください
+         ========================================================= -->
+    <section class="section section--cobalt environment" id="environment" aria-labelledby="environment-title">
+      <div class="container">
+        <div class="head head--split head--light">
+          <div>
+            <p class="head__en"><span class="head__no">07</span>Environment</p>
+            <h2 class="head__title" id="environment-title">数字で見る働く環境</h2>
+          </div>
+          <p class="head__lead">
+            官公庁の勤務時間に合わせて働くため、予定が立てやすく、休みも取りやすい環境です。
+            <span class="head__date">※ 2026年4月時点</span>
+          </p>
+        </div>
+
+        <ul class="stats">
+          <li class="stat stat--wide">
+            <span class="stat__label">年間休日</span>
+            <span class="stat__value"><span class="stat__num">123</span><span class="stat__unit">日</span></span>
+            <span class="stat__note">土日祝休み・完全週休2日制</span>
+          </li>
+          <li class="stat stat--wide">
+            <span class="stat__label">平均残業時間</span>
+            <span class="stat__value"><span class="stat__unit stat__unit--pre">月</span><span class="stat__num">10</span><span class="stat__unit">時間</span></span>
+            <span class="stat__note">1日あたり1時間未満が目安</span>
+          </li>
+          <li class="stat">
+            <span class="stat__label">有給取得率</span>
+            <span class="stat__value"><span class="stat__num">75</span><span class="stat__unit">%</span></span>
+            <span class="stat__note">家族の行事や通院にも</span>
+          </li>
+          <li class="stat">
+            <span class="stat__label">平均勤続年数</span>
+            <span class="stat__value"><span class="stat__num">9</span><span class="stat__unit">年</span></span>
+            <span class="stat__note">長く働く社員が多い職場です</span>
+          </li>
+        </ul>
+
+        <ul class="benefits">
+          <li class="benefits__item"><span class="benefits__name">資格取得支援</span><span class="benefits__state">あり</span></li>
+          <li class="benefits__item"><span class="benefits__name">社会保険</span><span class="benefits__state">完備</span></li>
+          <li class="benefits__item"><span class="benefits__name">住宅手当</span><span class="benefits__state">あり</span></li>
+          <li class="benefits__item"><span class="benefits__name">資格手当</span><span class="benefits__state">あり</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         08 キャリア・資格
+         ========================================================= -->
+    <section class="section section--white career" id="career" aria-labelledby="career-title">
+      <div class="container">
+        <div class="head head--split">
+          <div>
+            <p class="head__en"><span class="head__no">08</span>Career</p>
+            <h2 class="head__title" id="career-title">キャリア・資格</h2>
+          </div>
+          <p class="head__lead">
+            現場経験のある技術者が多く在籍しています。資格取得を会社が後押しし、技術者としての次の段階をめざせます。
+            <span class="head__date">※ 2026年4月時点</span>
+          </p>
+        </div>
+
+        <!-- 有資格者数 -->
+        <div class="quals-wrap">
+          <h3 class="block-title">主な有資格者数</h3>
+          <ul class="quals">
+            <li class="qual"><span class="qual__name">1級土木施工管理技士</span><span class="qual__count"><span class="qual__num">71</span>名</span></li>
+            <li class="qual"><span class="qual__name">2級土木施工管理技士</span><span class="qual__count"><span class="qual__num">12</span>名</span></li>
+            <li class="qual"><span class="qual__name">技術士<small>総合技術監理2・建設2・農業2・森林1</small></span><span class="qual__count"><span class="qual__num">7</span>名</span></li>
+            <li class="qual"><span class="qual__name">RCCM<small>道路2・河川砂防海岸1・農業土木1・土質基礎1・鋼構造コンクリート1・施工計画積算1</small></span><span class="qual__count"><span class="qual__num">7</span>名</span></li>
+            <li class="qual"><span class="qual__name">測量士</span><span class="qual__count"><span class="qual__num">18</span>名</span></li>
+            <li class="qual"><span class="qual__name">測量士補</span><span class="qual__count"><span class="qual__num">8</span>名</span></li>
+            <li class="qual"><span class="qual__name">技術士補（建設部門）</span><span class="qual__count"><span class="qual__num">4</span>名</span></li>
+            <li class="qual"><span class="qual__name">農業土木技術管理士</span><span class="qual__count"><span class="qual__num">4</span>名</span></li>
+          </ul>
+
+          <div class="qual-others">
+            <button class="more__toggle" type="button" aria-expanded="false" aria-controls="more-quals" data-open-text="そのほかの有資格者（13資格）を見る" data-close-text="閉じる">
+              <span class="more__text">そのほかの有資格者（13資格）を見る</span><span class="more__icon" aria-hidden="true"></span>
+            </button>
+            <div class="more__panel" id="more-quals" hidden>
+              <ul class="qual-others__list">
+                <li><span>1級管工事施工管理技士</span><span>2名</span></li>
+                <li><span>2級管工事施工管理技士</span><span>4名</span></li>
+                <li><span>1級建築施工管理技士</span><span>1名</span></li>
+                <li><span>2級建築施工管理技士</span><span>1名</span></li>
+                <li><span>海上工事施工管理技士</span><span>1名</span></li>
+                <li><span>ダム工事総括管理技術者</span><span>1名</span></li>
+                <li><span>コンクリート診断士</span><span>1名</span></li>
+                <li><span>下水道第2種</span><span>2名</span></li>
+                <li><span>水産工学技士（水産土木部門）</span><span>1名</span></li>
+                <li><span>畑地かんがい技士</span><span>1名</span></li>
+                <li><span>農業水利施設機能総合診断士</span><span>1名</span></li>
+                <li><span>土地改良専門技術者</span><span>1名</span></li>
+                <li><span>土地改良補償業務管理者</span><span>1名</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- キャリアパス -->
+        <div class="career-wrap">
+          <h3 class="block-title">キャリアパスの例<span>PSS事業部</span></h3>
+          <ol class="career-path">
+            <li class="career-step" style="--step: 1;">
+              <span class="career-step__term">入社後</span>
+              <div class="career-step__bar"><span class="career-step__no">01</span></div>
+              <p class="career-step__name">業務前研修</p>
+              <p class="career-step__text">業務の流れや確認の基準を、研修で身につけます。</p>
+            </li>
+            <li class="career-step" style="--step: 2;">
+              <span class="career-step__term">1〜3年</span>
+              <div class="career-step__bar"><span class="career-step__no">02</span></div>
+              <p class="career-step__name">支援技術者</p>
+              <p class="career-step__text">先輩と同じ事務所で、確認業務や資料作成を担当します。</p>
+            </li>
+            <li class="career-step" style="--step: 3;">
+              <span class="career-step__term">3年目〜</span>
+              <div class="career-step__bar"><span class="career-step__no">03</span></div>
+              <p class="career-step__name">担当技術者</p>
+              <p class="career-step__text">担当工事を受け持ち、確認から報告まで進めます。</p>
+            </li>
+            <li class="career-step" style="--step: 4;">
+              <span class="career-step__term">5年目〜</span>
+              <div class="career-step__bar"><span class="career-step__no">04</span></div>
+              <p class="career-step__name">主任技術者</p>
+              <p class="career-step__text">担当業務の中心となり、後輩の指導も行います。</p>
+            </li>
+            <li class="career-step" style="--step: 5;">
+              <span class="career-step__term">8年目〜</span>
+              <div class="career-step__bar"><span class="career-step__no">05</span></div>
+              <p class="career-step__name">管理技術者</p>
+              <p class="career-step__text">業務全体を管理し、発注者との窓口を担います。</p>
+            </li>
+          </ol>
+          <p class="note">※ 年数は目安です。経験や保有資格により異なります。</p>
+        </div>
+
+        <!-- 教育・研修制度 -->
+        <div class="training">
+          <div class="training__intro">
+            <h3 class="block-title">教育・研修制度</h3>
+            <p class="training__catch">絆を大切にし、<br>感謝の気持ちを持って<br>社会に貢献する。</p>
+          </div>
+          <div class="training__main">
+            <p class="training__text">一人ひとりの成長を支えるため、部署ごとの研修を継続的に行っています。自己啓発やスキルアップに取り組める環境を整え、社内のコミュニケーションやチームづくりを通じて、社員同士のつながりも大切にしています。</p>
+            <div class="training__cols">
+              <div class="training__col">
+                <h4 class="training__title">PSS事業部</h4>
+                <ul class="check-list">
+                  <li>品質管理研修会</li>
+                  <li>技術提案研修会</li>
+                  <li>コンプライアンス研修会</li>
+                  <li>コミュニケーション講話</li>
+                  <li>ワークショップ</li>
+                </ul>
+              </div>
+              <div class="training__col">
+                <h4 class="training__title">技術部</h4>
+                <ul class="check-list">
+                  <li>農業農村整備事業研修会</li>
+                  <li>土砂災害防止の集い</li>
+                  <li>CPDセミナー</li>
+                  <li>鹿児島県のCALS/EC説明会</li>
+                  <li>測量・設計部門研修会</li>
+                </ul>
+              </div>
+              <div class="training__col">
+                <h4 class="training__title">全社共通</h4>
+                <ul class="check-list">
+                  <li>健康管理指導</li>
+                  <li>資格取得の支援（受験・講習費用の補助）</li>
+                  <li>社内コミュニケーション・チームづくりの活動</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         09 よくある質問（左に見出し、右に質問）
+         ========================================================= -->
+    <section class="section section--paper faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-section__grid">
+        <div class="head faq-section__head">
+          <p class="head__en"><span class="head__no">09</span>FAQ</p>
+          <h2 class="head__title" id="faq-title">よくある<br>質問</h2>
+        </div>
+
+        <div class="faq">
+          <div class="faq__item">
+            <h3 class="faq__heading"><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">発注者支援業務が未経験でも応募できますか？</button></h3>
+            <div class="faq__answer" id="faq-a1" role="region" aria-labelledby="faq-q1" hidden>
+              <p>はい、応募できます。入社後は先輩社員と同じ事務所に配属し、資料作成や書類の確認から段階的に仕事を覚えていただきます。異業種から入社して活躍している社員もいます。</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__heading"><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">施工管理の経験は活かせますか？</button></h3>
+            <div class="faq__answer" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden>
+              <p>大いに活かせます。施工計画書や工程・品質・安全管理の知識は、そのまま確認業務の基準になります。現場の事情が分かるため、施工業者との協議もスムーズに進められます。</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__heading"><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">現場作業はありますか？</button></h3>
+            <div class="faq__answer" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden>
+              <p>重機の操作や作業員としての作業はありません。工事の立会いや施工状況の確認で現場に出ることはあります。技術部では、調査や測量のために現地で作業を行います。</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__heading"><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">転勤はありますか？</button></h3>
+            <div class="faq__answer" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden>
+              <p>原則として、ご自宅から通える範囲の事務所に配属します。業務の契約期間（多くは1年単位）の区切りで、配属先の事務所が変わる場合があります。</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__heading"><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">勤務地は選べますか？</button></h3>
+            <div class="faq__answer" id="faq-a5" role="region" aria-labelledby="faq-q5" hidden>
+              <p>鹿児島・宮崎・長崎の国道事務所・河川事務所などから、面接でご希望を伺って相談します。</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__heading"><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">資格がなくても応募できますか？</button></h3>
+            <div class="faq__answer" id="faq-a6" role="region" aria-labelledby="faq-q6" hidden>
+              <p>応募できます。入社後に土木施工管理技士などの資格取得をめざす社員を、受験費用の補助などで支援しています。</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__heading"><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-a7" id="faq-q7">残業はどれくらいありますか？</button></h3>
+            <div class="faq__answer" id="faq-a7" role="region" aria-labelledby="faq-q7" hidden>
+              <p>平均で月10時間程度です。官公庁の勤務時間に合わせて働くため、施工管理と比べて予定が立てやすい仕事です。年度末など、時期によって忙しくなることもあります。</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__heading"><button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-a8" id="faq-q8">資格取得支援制度はありますか？</button></h3>
+            <div class="faq__answer" id="faq-a8" role="region" aria-labelledby="faq-q8" hidden>
+              <p>あります。受験費用や講習費用の補助に加え、合格後は資格手当を支給します。社内には1級土木施工管理技士が71名在籍しており、先輩から受験のアドバイスを受けることもできます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         10 募集要項（PSS事業部／技術部をタブで切り替え）
+         ========================================================= -->
+    <section class="section section--paper recruit" id="recruit" aria-labelledby="recruit-title">
+      <div class="container">
+        <div class="head head--split">
+          <div>
+            <p class="head__en"><span class="head__no">10</span>Requirements</p>
+            <h2 class="head__title" id="recruit-title">募集要項</h2>
+          </div>
+          <p class="head__lead">PSS事業部・技術部それぞれの募集要項を、タブで切り替えてご確認いただけます。</p>
+        </div>
+
+        <div class="job-tabs" role="tablist" aria-label="募集要項の事業部切り替え">
+          <button class="job-tab" type="button" role="tab" id="job-tab-pss" aria-selected="true" aria-controls="job-panel-pss"><span class="job-tab__en">PSS</span>PSS事業部</button>
+          <button class="job-tab" type="button" role="tab" id="job-tab-eng" aria-selected="false" aria-controls="job-panel-eng" tabindex="-1"><span class="job-tab__en">ENG</span>技術部</button>
+        </div>
+
+        <!-- ▼ PSS事業部 -->
+        <div class="job-panel" id="job-panel-pss" role="tabpanel" aria-labelledby="job-tab-pss" tabindex="0">
+          <p class="job-panel__intro">職種：土木技術者／発注者支援業務（正社員） 3つの区分で募集しています</p>
+
+          <div class="job-cards">
+            <article class="job-card">
+              <p class="job-card__no">A</p>
+              <h3 class="job-card__title">新卒採用</h3>
+              <p class="job-card__target">2027年3月に卒業予定の方（大学・高専・専門学校・高校）</p>
+              <dl class="job-card__list">
+                <div><dt>職種</dt><dd>土木技術者（発注者支援）／測量設計技術者</dd></div>
+                <div><dt>応募資格</dt><dd>土木系学科を卒業予定の方（他学科の方もご相談ください）</dd></div>
+                <div><dt>給与</dt><dd>大卒　月給22万円〜<br>高卒　月給19万円〜</dd></div>
+                <div><dt>入社後</dt><dd>入社研修のあと、先輩と同じ職場でOJT</dd></div>
+              </dl>
+            </article>
+
+            <article class="job-card">
+              <p class="job-card__no">B</p>
+              <h3 class="job-card__title">中途採用（未経験）</h3>
+              <p class="job-card__target">発注者支援業務や土木の実務経験がない方、異業種から転職したい方</p>
+              <dl class="job-card__list">
+                <div><dt>職種</dt><dd>土木技術者（発注者支援）／総合職</dd></div>
+                <div><dt>応募資格</dt><dd>普通自動車免許（AT限定可）、基本的なパソコン操作ができる方</dd></div>
+                <div><dt>給与</dt><dd>月給23万円〜30万円</dd></div>
+                <div><dt>入社後</dt><dd>資料作成や審査補助から始め、段階的に担当業務を広げます</dd></div>
+              </dl>
+            </article>
+
+            <article class="job-card">
+              <p class="job-card__flag">施工管理経験者を歓迎</p>
+              <p class="job-card__no">C</p>
+              <h3 class="job-card__title">中途採用（経験者）</h3>
+              <p class="job-card__target">土木工事の管理や、土木の実務経験がある方</p>
+              <dl class="job-card__list">
+                <div><dt>職種</dt><dd>発注者支援業務（工事監督支援・事業調査）</dd></div>
+                <div><dt>応募資格</dt><dd>土木工事管理、土木等の実務経験</dd></div>
+                <div><dt>歓迎資格</dt><dd>1級・2級土木施工管理技士、1級土木施工管理技士補、技術士（総合技術監理部門〈建設〉または建設部門）</dd></div>
+                <div><dt>給与</dt><dd>月給25万円〜<br>年収300万円〜550万円程度<br><small>経験・スキル・年齢を考慮して決定します</small></dd></div>
+              </dl>
+            </article>
+          </div>
+
+          <div class="conditions">
+            <button class="more__toggle" type="button" aria-expanded="false" aria-controls="recruit-pss-conditions" data-open-text="共通の募集条件を見る" data-close-text="共通の募集条件を閉じる">
+              <span class="more__text">共通の募集条件を見る</span><span class="more__icon" aria-hidden="true"></span>
+            </button>
+            <div class="more__panel" id="recruit-pss-conditions" hidden>
+              <div class="table-scroll">
+                <table class="spec-table">
+                  <caption class="visually-hidden">PSS事業部　共通の募集条件</caption>
+                  <tbody>
+                    <tr><th scope="row">雇用形態</th><td>正社員</td></tr>
+                    <tr><th scope="row">仕事内容</th><td>工事監督支援、事業調査、積算技術、資料作成業務など</td></tr>
+                    <tr><th scope="row">勤務地</th><td>会社が定める国道事務所・河川事務所、または出張所<br>（鹿児島・宮崎・長崎で相談できます）</td></tr>
+                    <tr><th scope="row">勤務時間</th><td>8:30〜17:30</td></tr>
+                    <tr><th scope="row">休日・休暇</th><td>完全週休2日制（土日祝休み）、年末年始、特別休暇、有給休暇（入社6か月後に10日付与）</td></tr>
+                    <tr><th scope="row">年間休日</th><td>123日</td></tr>
+                    <tr><th scope="row">昇給</th><td>あり</td></tr>
+                    <tr><th scope="row">試用期間</th><td>6か月（期間中の条件変更なし）</td></tr>
+                    <tr>
+                      <th scope="row">福利厚生</th>
+                      <td><ul class="inline-list"><li>社会保険完備</li><li>通勤手当（上限月2万円）</li><li>資格手当（上限月5万円）</li><li>単身赴任手当</li><li>住宅手当</li><li>退職金制度</li></ul></td>
+                    </tr>
+                    <tr><th scope="row">受動喫煙対策</th><td>屋内禁煙</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ▼ 技術部 -->
+        <div class="job-panel" id="job-panel-eng" role="tabpanel" aria-labelledby="job-tab-eng" tabindex="0" hidden>
+          <p class="job-panel__intro">職種：測量・設計技術（正社員）</p>
+
+          <div class="job-cards job-cards--two">
+            <article class="job-card">
+              <p class="job-card__no">A</p>
+              <h3 class="job-card__title">新卒採用</h3>
+              <p class="job-card__target">測量・設計の仕事に鹿児島県内で挑戦したい、卒業予定の方</p>
+              <dl class="job-card__list">
+                <div><dt>職種</dt><dd>測量・設計技術者</dd></div>
+                <div><dt>応募資格</dt><dd>要確認</dd></div>
+                <div><dt>給与</dt><dd>要確認</dd></div>
+                <div><dt>入社後</dt><dd>要確認</dd></div>
+              </dl>
+            </article>
+
+            <article class="job-card">
+              <p class="job-card__flag">測量・設計の実務経験者を歓迎</p>
+              <p class="job-card__no">B</p>
+              <h3 class="job-card__title">中途採用（経験者）</h3>
+              <p class="job-card__target">測量士または測量士補の資格をお持ちの方</p>
+              <dl class="job-card__list">
+                <div><dt>職種</dt><dd>測量・設計技術（測量及び土木設計業務の担当者またはその補助者）</dd></div>
+                <div><dt>応募資格</dt><dd>高校卒業以上、測量士または測量士補の資格、普通自動車運転免許（AT限定不可）</dd></div>
+                <div><dt>給与</dt><dd>月給20万円〜25万円<br><small>基本給19.7万円〜22万円、資格手当0.3万円〜3万円、通勤手当（上限月2万円）を含む。賞与年2回</small></dd></div>
+              </dl>
+            </article>
+          </div>
+
+          <div class="conditions">
+            <button class="more__toggle" type="button" aria-expanded="false" aria-controls="recruit-eng-conditions" data-open-text="募集条件を見る" data-close-text="募集条件を閉じる">
+              <span class="more__text">募集条件を見る</span><span class="more__icon" aria-hidden="true"></span>
+            </button>
+            <div class="more__panel" id="recruit-eng-conditions" hidden>
+              <div class="table-scroll">
+                <table class="spec-table">
+                  <caption class="visually-hidden">技術部　募集条件</caption>
+                  <tbody>
+                    <tr><th scope="row">雇用形態</th><td>正社員</td></tr>
+                    <tr><th scope="row">仕事内容</th><td>公共事業（主にインフラ事業）における測量及び土木設計業務の担当者またはその補助者</td></tr>
+                    <tr><th scope="row">勤務地</th><td>鹿児島県志布志市有明町原田2300-2</td></tr>
+                    <tr><th scope="row">勤務時間</th><td>8:30〜17:30（休憩60分、月平均残業時間7時間程度）</td></tr>
+                    <tr><th scope="row">休日・休暇</th><td>完全週休2日制（土日祝休み）、年末年始、特別休暇、有給休暇（入社6か月後に10日付与）</td></tr>
+                    <tr><th scope="row">年間休日</th><td>124日</td></tr>
+                    <tr><th scope="row">昇給</th><td>あり</td></tr>
+                    <tr><th scope="row">試用期間</th><td>6か月（期間中の条件変更なし）</td></tr>
+                    <tr>
+                      <th scope="row">福利厚生</th>
+                      <td><ul class="inline-list"><li>雇用保険・労災保険</li><li>健康保険・厚生年金</li><li>退職金制度（勤続1年以上）</li><li>マイカー通勤可（無料駐車場あり）</li></ul></td>
+                    </tr>
+                    <tr><th scope="row">受動喫煙対策</th><td>屋内禁煙（屋外に喫煙スペースあり）</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <p class="note">※ 「中途採用（経験者）」の内容は、ハローワーク求人（求人番号 46010-28316061）に基づいています。求人票に掲載年の記載がなく、最新の情報かどうかを確認できていません。「新卒採用」の応募資格・給与・入社後の情報は未確認のため「要確認」としています。公開前に人事担当者による最終確認をお願いします。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         11 選考フロー（1本の線でつなぐ）
+         ========================================================= -->
+    <section class="section section--white flow-section" id="flow" aria-labelledby="flow-title">
+      <div class="container">
+        <div class="head head--split">
+          <div>
+            <p class="head__en"><span class="head__no">11</span>Selection flow</p>
+            <h2 class="head__title" id="flow-title">選考フロー</h2>
+          </div>
+          <p class="head__lead">エントリーから内定まで、<strong class="flow-section__weeks">およそ3〜4週間</strong>が目安です。</p>
+        </div>
+
+        <ol class="flow">
+          <li class="flow__step"><span class="flow__no">01</span><p class="flow__name">エントリー</p><p class="flow__text">リクルートエージェント・ハローワーク・Indeedからご応募ください</p></li>
+          <li class="flow__step"><span class="flow__no">02</span><p class="flow__name">書類選考</p><p class="flow__text">履歴書・職務経歴書をもとに選考します</p></li>
+          <li class="flow__step"><span class="flow__no">03</span><p class="flow__name">一次面接</p><p class="flow__text">仕事内容のご説明と、これまでの経験をお聞きします</p></li>
+          <li class="flow__step"><span class="flow__no">04</span><p class="flow__name">最終面接</p><p class="flow__text">役員と面接します。勤務地のご希望も伺います</p></li>
+          <li class="flow__step flow__step--goal"><span class="flow__no">05</span><p class="flow__name">内定</p><p class="flow__text">入社日はご相談のうえ決定します</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         12 応募はこちらから（大きなリンクの一覧）
+         ========================================================= -->
+    <section class="section section--ink apply" id="apply" aria-labelledby="apply-title">
+      <div class="container">
+        <div class="head head--split head--light">
+          <div>
+            <p class="head__en"><span class="head__no">12</span>Entry</p>
+            <h2 class="head__title" id="apply-title">応募はこちらから</h2>
+          </div>
+          <p class="head__lead">ご都合のよい方法でご応募ください。お電話でのご質問も受け付けています。</p>
+        </div>
+
+        <ul class="apply-list">
+          <li>
+            <a class="apply-row" href="https://www.r-agent.com/company/h4671/" target="_blank" rel="noopener">
+              <span class="apply-row__no">A</span>
+              <span class="apply-row__body">
+                <span class="apply-row__title">リクルートエージェント</span>
+                <span class="apply-row__text">転職エージェント経由で応募できます（無料の会員登録が必要です）</span>
+              </span>
+              <span class="apply-row__action">求人を見る<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg><span class="visually-hidden">（新しいタブで開きます）</span></span>
+            </a>
+          </li>
+          <li>
+            <!-- 求人票の個別URLは期限切れになるため、公式の固定トップページへ案内 -->
+            <a class="apply-row" href="https://www.hellowork.mhlw.go.jp/" target="_blank" rel="noopener">
+              <span class="apply-row__no">B</span>
+              <span class="apply-row__body">
+                <span class="apply-row__title">ハローワーク求人</span>
+                <span class="apply-row__text">ハローワークインターネットサービスで「株式会社コバルト技建」と検索してください</span>
+              </span>
+              <span class="apply-row__action">求人を探す<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg><span class="visually-hidden">（新しいタブで開きます）</span></span>
+            </a>
+          </li>
+          <li>
+            <a class="apply-row" href="https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%B3%E3%83%90%E3%83%AB%E3%83%88%E6%8A%80%E5%BB%BA/jobs" target="_blank" rel="noopener">
+              <span class="apply-row__no">C</span>
+              <span class="apply-row__body">
+                <span class="apply-row__title">Indeed</span>
+                <span class="apply-row__text">当社の掲載求人を一覧で確認できます</span>
+              </span>
+              <span class="apply-row__action">求人を見る<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg><span class="visually-hidden">（新しいタブで開きます）</span></span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- 電話：番号は href と表示の2か所を差し替え -->
+        <a class="apply-tel" href="tel:0992556619">
+          <span class="apply-tel__label">お電話でのお問い合わせ<small>本社 総務部（採用担当）</small></span>
+          <span class="apply-tel__num">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 8h6l3 9-4 3a22 22 0 0 0 9 9l3-4 9 3v6a4 4 0 0 1-4 4C22 38 10 26 10 12a4 4 0 0 1 4-4z" /></svg>099-255-6619
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         エントリーCTA：images/cta.jpg
+         ========================================================= -->
+    <section class="cta" id="entry" aria-labelledby="cta-title">
+      <div class="cta__media photo" data-label="images/cta.jpg ／ 現地で図面を確認する技術者">
+        <img src="images/cta.jpg" alt="" width="1150" height="647" loading="lazy">
+      </div>
+      <div class="cta__inner container">
+        <p class="cta__en" aria-hidden="true">Join us</p>
+        <h2 class="cta__title" id="cta-title">あなたの経験を、<br>社会インフラの未来へ。</h2>
+        <p class="cta__text">
+          これまで培ってきた土木技術や施工管理の経験を、<br class="pc-only">
+          発注者支援という新しい立場で活かしてみませんか。
+        </p>
+        <a class="btn btn--white btn--xlarge" href="#apply">エントリーする<svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" /></svg></a>
+      </div>
+    </section>
+
+  
+
+  
+
+  </main>
+
+
+  <!-- =========================================================
+       フッター
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-contact">
+      <div class="footer-contact__main">
+        <p class="footer-contact__lead">お気軽に、ご相談・お問い合わせください</p>
+        <a class="footer-contact__tel" href="tel:0992556619">
+          <span class="footer-contact__tel-label">tel.</span>099-255-6619
+        </a>
+      </div>
+
+      <div class="footer-contact__offices">
+        <address class="office">
+          <p class="office__name">本社 総務部</p>
+          <p class="office__address">〒890-0053<br>鹿児島県鹿児島市中央町10 <span class="nowrap">キャンセビル6F</span></p>
+          <a class="office__map" href="https://goo.gl/maps/rEeNAJRDKY2AUqHX6" target="_blank" rel="noopener"><svg class="office__map-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 15s5-4.6 5-8.5A5 5 0 0 0 3 6.5C3 10.4 8 15 8 15z" /><circle cx="8" cy="6.5" r="1.8" /></svg>Google Mapで確認する<span class="visually-hidden">（新しいタブで開きます）</span></a>
+        </address>
+        <address class="office">
+          <p class="office__name">本社 技術部・PSS事業部</p>
+          <p class="office__address">〒899-2701<br>鹿児島県鹿児島市石谷町1592-27</p>
+          <a class="office__map" href="https://goo.gl/maps/suDfqEcDNHmux71u6" target="_blank" rel="noopener"><svg class="office__map-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 15s5-4.6 5-8.5A5 5 0 0 0 3 6.5C3 10.4 8 15 8 15z" /><circle cx="8" cy="6.5" r="1.8" /></svg>Google Mapで確認する<span class="visually-hidden">（新しいタブで開きます）</span></a>
+        </address>
+      </div>
+    </div>
+
+    <p class="site-footer__big" aria-hidden="true">COBALT GIKEN</p>
+
+    <div class="container site-footer__inner">
+      <p class="site-footer__name">株式会社コバルト技建</p>
+      <nav class="site-footer__nav" aria-label="フッターメニュー">
+        <ul>
+          <li><a href="https://cobalt-giken.jp/about/" target="_blank" rel="noopener">会社概要</a></li>
+          <li><a href="#recruit">採用情報</a></li>
+          <li><a href="https://cobalt-giken.jp/privacy-policy/" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+          <li><a href="https://cobalt-giken.jp/contact/" target="_blank" rel="noopener">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__copy"><small>&copy; 2026 COBALT GIKEN Co., Ltd.</small></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
